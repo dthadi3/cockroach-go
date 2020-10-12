@@ -3,7 +3,9 @@ language: go
 go:
 - 1.x
 - 1.13.x
-
+arch:
+  - AMD64
+  - ppc64le
 script:
   - go test -p 1       -v ./...
   - go test -p 1 -race -v ./...
